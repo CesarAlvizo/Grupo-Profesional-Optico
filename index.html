@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Profesional Óptico - Cuidado Visual para Toda la Familia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chatbot Widget -->
+    <script src="https://abc-chatbot-two.vercel.app/widget.js" data-public-key="pub-optica-gpo-2026"
+        data-client-id="grupo-profesional-optico" defer></script>
+</head>
+
+<body>
+
+    <!-- Splash Screen -->
+    <div id="page-intro" aria-hidden="true">
+        <div class="intro-loader-container" id="intro-loader">
+            <svg class="intro-spinner" viewBox="0 0 50 50">
+                <circle class="spinner-path" cx="25" cy="25" r="20" fill="none" stroke-width="3"></circle>
+            </svg>
+        </div>
+        <div class="intro-reveal-container" id="intro-reveal">
+            <div class="intro-logo-wrapper">
+                <img src="assets/images/hero/logo.png" alt="Logo Grupo Profesional Óptico" class="intro-logo-final">
+            </div>
+            <div class="intro-logo-text">Grupo <span>Profesional</span> Óptico</div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Mobile Toggle -->
+                <div class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <span class="logo-desktop">Grupo <span class="accent-text">Profesional</span> Óptico</span>
+                    <span class="logo-mobile"><span class="accent-text">G</span>P<span
+                            class="accent-text">O</span></span>
+                </a>
+
+                <!-- Navigation -->
+                <div class="nav-menu" id="navMenu">
+
+                    <!-- Desktop Links -->
+                    <a href="#hero" class="nav-link desktop-link">Inicio</a>
+                    <a href="#about" class="nav-link desktop-link">Nosotros</a>
+                    <a href="#services" class="nav-link desktop-link">Servicios</a>
+                    <a href="#benefits" class="nav-link desktop-link">Beneficios</a>
+                    <a href="#contact" class="nav-link desktop-link">Contacto</a>
+
+                    <!-- Mobile Links -->
+                    <div class="mobile-menu-links">
+                        <p class="mobile-menu-label">Navegación</p>
+
+                        <a href="#hero" class="nav-link mobile-nav-link">
+                            <span class="mobile-link-icon"><svg viewBox="0 0 24 24">
+                                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                                </svg></span>
+                            Inicio
+                            <svg class="mobile-link-arrow" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </a>
+                        <a href="#about" class="nav-link mobile-nav-link">
+                            <span class="mobile-link-icon"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                </svg></span>
+                            Nosotros
+                            <svg class="mobile-link-arrow" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </a>
+                        <a href="#services" class="nav-link mobile-nav-link">
+                            <span class="mobile-link-icon"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                                </svg></span>
+                            Servicios
+                            <svg class="mobile-link-arrow" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </a>
+                        <a href="#benefits" class="nav-link mobile-nav-link">
+                            <span class="mobile-link-icon"><svg viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg></span>
+                            Beneficios
+                            <svg class="mobile-link-arrow" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </a>
+                        <a href="#contact" class="nav-link mobile-nav-link">
+                            <span class="mobile-link-icon"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg></span>
+                            Contacto
+                            <svg class="mobile-link-arrow" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+                        <svg class="icon-sun" viewBox="0 0 24 24">
+                            <path
+                                d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Footer -->
+                    <div class="mobile-menu-footer">
+                        <a href="tel:4491456720" class="mobile-menu-contact-link">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                            </svg>
+                            449 145 6720
+                        </a>
+                        <button class="theme-toggle mobile-theme-toggle" id="themeToggleMobile"
+                            aria-label="Cambiar modo oscuro">
+                            <svg class="icon-sun" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+                            </svg>
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <div class="nav-overlay" id="navOverlay"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-bg-visual">
+                <div class="hero-blob blob-1"></div>
+                <div class="hero-blob blob-2"></div>
+                <div class="hero-blob blob-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Grupo <span>Profesional</span> Óptico</h1>
+                        <p>Especialistas en cuidado visual para toda la familia. Tu visión es nuestra prioridad, con
+                            atención personalizada y precios accesibles.</p>
+                        <a href="#contact" class="hero-cta">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                            </svg>
+                            Contáctanos hoy
+                        </a>
+                        <div class="hero-badges">
+                            <div class="hero-badge">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                </svg>
+                                Examen desde $200
+                            </div>
+                            <div class="hero-badge">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                                </svg>
+                                Lun–Vie · 11:00–20:00
+                            </div>
+                            <div class="hero-badge">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                Aguascalientes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-image-wrapper">
+                            <div class="hero-logo-container">
+                                <img src="assets/images/hero/logo.png" alt="Grupo Profesional Óptico"
+                                    class="hero-logo-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/about/tienda.jpeg" alt="Interior de Grupo Profesional Óptico"
+                            class="about-photo" loading="lazy" decoding="async"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                        <div class="about-image about-image-fallback">
+                            <svg viewBox="0 0 64 64" fill="none">
+                                <ellipse cx="32" cy="32" rx="30" ry="18" stroke="currentColor" stroke-width="1.5"
+                                    fill="none" />
+                                <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="1.5" fill="none" />
+                                <circle cx="32" cy="32" r="4" fill="currentColor" />
+                            </svg>
+                            <span>Foto de la óptica</span>
+                            <small>assets/images/about/nosotros.jpg</small>
+                        </div>
+                    </div>
+                    <div class="about-text fade-in">
+                        <h2>Sobre Nosotros</h2>
+                        <p>Somos una óptica atendida por <strong>Martha Hernández Flores</strong>, especializada en
+                            cuidado visual para toda la familia. Ofrecemos atención personalizada y soluciones adaptadas
+                            a cada paciente.</p>
+                        <p>Nuestra misión es proporcionar servicios de calidad con un trato cálido y profesional,
+                            explicando cada paso del examen y las opciones disponibles para tu salud visual.</p>
+                        <div class="about-owner">
+                            <div class="about-owner-avatar">M</div>
+                            <div class="about-owner-info">
+                                <h4>Martha Hernández Flores</h4>
+                                <p>Propietaria y especialista en optometría</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Soluciones visuales completas para cada necesidad</p>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <img src="assets/images/services/examen.jpg" alt="Examen de la vista" class="service-image"
+                            loading="lazy" decoding="async">
+                        <div class="service-content">
+                            <h3>Examen de la vista</h3>
+                            <p class="price">$200</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/lentes_graduados.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lentes graduados</h3>
+                            <p class="price">$1,200 - $8,000</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/transitions.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Micas Transition</h3>
+                            <p class="price">$6,200</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/lentes_contacto.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lentes de contacto</h3>
+                            <p class="price">$1,200 (6 pares)</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/pupilentes.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Pupilentes</h3>
+                            <p class="price">$300</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/lentes_sol.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lentes de sol</h3>
+                            <p class="price">$800 - $1,800</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/lentes_infantiles.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lentes infantiles</h3>
+                            <p class="price">$800</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/bifocales.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lentes bifocales</h3>
+                            <p class="price">Varios precios</p>
+                        </div>
+                    </div>
+                    <div class="service-card fade-in">
+                        <div class="service-image"
+                            style="background-image: url('assets/images/services/lentes_seguridad.jpg')">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lentes de seguridad</h3>
+                            <p class="price">$150</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>¿Por Qué Elegirnos?</h2>
+                    <p>Nos diferenciamos por nuestra atención de calidad</p>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
+                            </svg>
+                        </div>
+                        <h3>Atención personalizada</h3>
+                        <p>Evaluación adaptada a cada paciente</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                            </svg>
+                        </div>
+                        <h3>Explicación clara</h3>
+                        <p>Resultados detallados de tu examen</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                            </svg>
+                        </div>
+                        <h3>Precios accesibles</h3>
+                        <p>Opciones para todo presupuesto</p>
+                    </div>
+                    <div class="benefit-card fade-in">
+                        <div class="benefit-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <h3>Experiencia local</h3>
+                        <p>Conocemos la comunidad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Contáctenos</h2>
+                    <p>Estamos listos para atenderte</p>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info fade-in">
+                        <div class="contact-card">
+                            <h3>Información de Contacto</h3>
+                            <div class="contact-list">
+                                <div class="contact-row">
+                                    <div class="contact-row-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-row-content">
+                                        <h4>Propietaria</h4>
+                                        <p>Martha Hernández Flores</p>
+                                    </div>
+                                </div>
+                                <div class="contact-row">
+                                    <div class="contact-row-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-row-content">
+                                        <h4>Teléfono</h4>
+                                        <p>449 145 6720</p>
+                                    </div>
+                                </div>
+                                <div class="contact-row">
+                                    <div class="contact-row-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-row-content">
+                                        <h4>Email</h4>
+                                        <p>grupoprof_optico@outlook.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-row">
+                                    <div class="contact-row-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-row-content">
+                                        <h4>Dirección</h4>
+                                        <p>Av. Hacienda de Ojocaliente 147, Haciendas de Aguascalientes, 20196</p>
+                                    </div>
+                                </div>
+                                <div class="contact-row">
+                                    <div class="contact-row-icon">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact-row-content">
+                                        <h4>Horario</h4>
+                                        <p>Lunes a Viernes de 11:00 a 20:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map fade-in">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Av+Hacienda+de+Ojocaliente+147+Haciendas+de+Aguascalientes+20196+Aguascalientes+Ags+Mexico&t=m&z=18&ie=UTF8&iwloc=&output=embed"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-glow footer-glow-left"></div>
+            <div class="footer-glow footer-glow-right"></div>
+
+            <div class="container">
+                <div class="footer-content fade-in">
+                    <div class="footer-brand">
+                        <div class="footer-brand-logo-row">
+                            <svg class="footer-brand-eye" viewBox="0 0 64 64" fill="none">
+                                <ellipse cx="32" cy="32" rx="30" ry="18" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <circle cx="32" cy="32" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+                                <circle cx="32" cy="32" r="4" fill="currentColor" />
+                            </svg>
+                            <a href="#" class="logo">Grupo <span>Profesional</span> Óptico</a>
+                        </div>
+                        <p>Especialistas en cuidado visual para toda la familia. Tu visión es nuestra prioridad.</p>
+                        <div class="footer-contact-chips">
+                            <a href="tel:4491456720" class="footer-chip">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                                449 145 6720
+                            </a>
+                            <a href="mailto:grupoprof_optico@outlook.com" class="footer-chip">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                            </svg>
+                            Horario
+                        </h4>
+                        <ul>
+                            <li>
+                                <span class="footer-dot"></span>
+                                Lunes a Viernes
+                            </li>
+                            <li>
+                                <span class="footer-dot"></span>
+                                11:00 – 20:00
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                            Dirección
+                        </h4>
+                        <ul>
+                            <li><span class="footer-dot"></span>Av. Hacienda de Ojocaliente 147</li>
+                            <li><span class="footer-dot"></span>Haciendas de Aguascalientes</li>
+                            <li><span class="footer-dot"></span>20196 Aguascalientes, Ags.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-text">© 2025 Grupo Profesional Óptico. Todos los derechos reservados.
+                    </div>
+                    <a href="#hero" class="footer-back-top" id="footerBackTop" aria-label="Volver arriba">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <!-- Auto-open chatbot on page load -->
+    <script>
+        (function () {
+            var chatOpened = false;
+            // Record all buttons that already exist BEFORE the widget loads
+            var existingButtons = new Set(Array.from(document.querySelectorAll('button')));
+
+            function tryOpenChat() {
+                if (chatOpened) return;
+
+                // Strategy 1: Find any NEW button added after page load (must be from the widget)
+                var allButtons = document.querySelectorAll('button');
+                for (var i = 0; i < allButtons.length; i++) {
+                    var btn = allButtons[i];
+                    if (!existingButtons.has(btn) && btn.offsetParent !== null) {
+                        // Extra check: make sure it's not a nav button we might have missed
+                        var parentNav = btn.closest('header, nav, footer');
+                        if (!parentNav) {
+                            setTimeout(function (b) {
+                                b.click();
+                            }, 800, btn);
+                            chatOpened = true;
+                            return;
+                        }
+                    }
+                }
+
+                // Strategy 2: Try common widget selectors
+                var selectors = [
+                    '[id*="chat"]', '[id*="bot"]', '[id*="widget"]', '[id*="launcher"]',
+                    '[class*="chat"]', '[class*="bot"]', '[class*="launcher"]', '[class*="widget"]'
+                ];
+                for (var s = 0; s < selectors.length; s++) {
+                    var el = document.querySelector(selectors[s]);
+                    if (el && !existingButtons.has(el) && el.offsetParent !== null) {
+                        var clickTarget = el.tagName === 'BUTTON' ? el : el.querySelector('button') || el;
+                        clickTarget.click();
+                        chatOpened = true;
+                        return;
+                    }
+                }
+
+                // Strategy 3: Check shadow roots
+                var allElements = document.querySelectorAll('*');
+                for (var j = 0; j < allElements.length; j++) {
+                    var host = allElements[j];
+                    if (host.shadowRoot) {
+                        var shadowBtn = host.shadowRoot.querySelector('button');
+                        if (shadowBtn) {
+                            shadowBtn.click();
+                            chatOpened = true;
+                            return;
+                        }
+                    }
+                }
+            }
+
+            // Watch for dynamically added elements
+            var observer = new MutationObserver(function (mutations, obs) {
+                setTimeout(function () {
+                    tryOpenChat();
+                    if (chatOpened) obs.disconnect();
+                }, 400);
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+
+            // Fallback polling for up to 10 seconds
+            var attempts = 0;
+            var interval = setInterval(function () {
+                tryOpenChat();
+                attempts++;
+                if (chatOpened || attempts >= 20) {
+                    clearInterval(interval);
+                    observer.disconnect();
+                }
+            }, 500);
+        })();
+    </script>
+
+    <!-- Prevent chatbot auto-focus on mobile -->
+    <script>
+        (function () {
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+                || ('ontouchstart' in window);
+
+            if (!isMobile) return;
+
+            var userHasTappedInput = false;
+
+            function blurChatbotInputs() {
+                if (userHasTappedInput) return;
+
+                var chatContainers = document.querySelectorAll(
+                    '[id*="chatbot"], [class*="chatbot"], [id*="chat-bot"], [class*="chat-bot"], [id*="chat-widget"], [class*="chat-widget"]'
+                );
+
+                chatContainers.forEach(function (container) {
+                    var inputs = container.querySelectorAll('input, textarea');
+                    inputs.forEach(function (input) {
+                        if (document.activeElement === input) {
+                            input.blur();
+                        }
+                        input.addEventListener('focus', function (e) {
+                            if (!e.isTrusted) {
+                                input.blur();
+                                return;
+                            }
+                        }, true);
+                    });
+                });
+            }
+
+            document.addEventListener('touchstart', function (e) {
+                var chatContainer = e.target.closest(
+                    '[id*="chatbot"], [class*="chatbot"], [id*="chat-widget"]'
+                );
+                if (chatContainer) {
+                    userHasTappedInput = true;
+                }
+            }, true);
+
+            var observer = new MutationObserver(function () {
+                setTimeout(blurChatbotInputs, 300);
+                setTimeout(blurChatbotInputs, 800);
+                setTimeout(blurChatbotInputs, 1500);
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+
+            setTimeout(blurChatbotInputs, 1000);
+            setTimeout(blurChatbotInputs, 2000);
+            setTimeout(blurChatbotInputs, 4000);
+        })();
+    </script>
+</body>
+
+</html>
