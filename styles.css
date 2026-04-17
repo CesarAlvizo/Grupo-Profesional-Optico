@@ -1708,19 +1708,7 @@ footer {
     }
 
     .hero-blob {
-        opacity: 0.9; 
-        filter: none !important;
-        animation-duration: 35s !important; 
-    }
-
-    .blob-1 { background: radial-gradient(circle, var(--blob-1) 0%, transparent 70%) !important; }
-    .blob-2 { background: radial-gradient(circle, var(--blob-2) 0%, transparent 70%) !important; }
-    .blob-3 { background: radial-gradient(circle, var(--blob-3) 0%, transparent 70%) !important; }
-
-    [data-theme="dark"] .blob-1,
-    [data-theme="dark"] .blob-2,
-    [data-theme="dark"] .blob-3 {
-        background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 65%) !important;
+        display: none !important;
     }
 
     .nav-menu,
